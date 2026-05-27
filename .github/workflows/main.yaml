@@ -20,4 +20,4 @@ jobs:
         pip install pandas numpy scikit-learn openpyxl
 
     - name: Run Preprocessing Script
-      run: python preprocessing/automate_husein.py
+      run: python prepocessing/automate_husein.py
