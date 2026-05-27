@@ -1,0 +1,28 @@
+name: Automatisasi Preprocessing Superstore
+
+# Robot akan berjalan otomatis setiap kali kamu melakukan git push
+on: [push]
+
+jobs:
+  run-preprocessing:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Mengunduh kode dari repositori GitHub ke komputer virtual
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 2. Menyiapkan lingkungan Python
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12.7'
+
+    # 3. Menginstal library yang dibutuhkan oleh skrip kamu
+    - name: Install Dependencies
+      run: |
+        pip install pandas numpy scikit-learn
+
+    # 4. Menjalankan skrip otomatisasi (ganti nama file jika berbeda)
+    - name: Run Preprocessing Script
+      run: python preprocessing/automate_MuhammadHuseinAbdullahMahfud
