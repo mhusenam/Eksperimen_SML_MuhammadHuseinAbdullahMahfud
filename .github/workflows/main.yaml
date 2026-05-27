@@ -1,4 +1,3 @@
-#test robot
 name: Automatisasi Preprocessing Superstore
 
 on: [push]
@@ -16,11 +15,9 @@ jobs:
       with:
         python-version: '3.12.7'
 
-    # Kita tambahkan openpyxl agar Python bisa membaca file .xlsx kamu
     - name: Install Dependencies
       run: |
         pip install pandas numpy scikit-learn openpyxl
 
-    # Memanggil skrip otomatisasi dengan nama file asli kamu
     - name: Run Preprocessing Script
       run: python preprocessing/automate_husein.py
