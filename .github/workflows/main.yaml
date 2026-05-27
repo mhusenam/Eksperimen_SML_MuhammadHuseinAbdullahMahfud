@@ -22,4 +22,4 @@ jobs:
 
     # Memanggil skrip otomatisasi dengan nama file asli kamu
     - name: Run Preprocessing Script
-      run: python preprocessing/automate_MuhammadHuseinAbdullahMahfud.py
+      run: python preprocessing/automate_husein.py
