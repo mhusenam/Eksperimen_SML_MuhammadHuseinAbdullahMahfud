@@ -1,3 +1,4 @@
+#test robot
 name: Automatisasi Preprocessing Superstore
 
 on: [push]
